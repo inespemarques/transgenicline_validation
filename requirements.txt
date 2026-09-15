@@ -1,0 +1,21 @@
+# Core scientific stack
+numpy
+pandas
+scipy
+scikit-image
+
+# Segmentation
+cellpose
+stardist
+cupy-cuda12x     # match to your CUDA version, or remove if CPU-only
+
+# Functional imaging (only needed for stage 5)
+suite2p
+
+# Registration (only needed for stage 5) — choose one of the two
+SimpleITK
+# antspyx
+
+# TODO: pin exact versions once confirmed, e.g. cellpose==3.0.11
+# Generate a locked version of this file from your working environment with:
+#   pip freeze > requirements-lock.txt

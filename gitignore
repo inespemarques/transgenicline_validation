@@ -1,0 +1,47 @@
+# Raw and large imaging data — deposited on BioImage Archive, not tracked here
+*.tif
+*.tiff
+*.czi
+*.lsm
+*.nd2
+*.ome.tif
+*.ome.tiff
+
+# Segmentation masks / large intermediate arrays
+*.npy
+*.npz
+*.h5
+*.hdf5
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# FIJI/ImageJ temp
+*.tmp
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editors
+.vscode/
+.idea/
+*.swp
+
+# Suite2p output (large, regenerable)
+suite2p/
+*.bin
+
+# Logs
+*.log

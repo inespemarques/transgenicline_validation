@@ -1,0 +1,25 @@
+cff-version: 1.2.0
+message: "If you use this pipeline, please cite it as below."
+title: "Quantitative Characterization of Zebrafish Reporter Lines Targeting Different Neurotransmitter Populations"
+type: software
+authors:
+  - family-names: "[Your last name]"
+    given-names: "[Your first name]"
+    affiliation: "[Your institution]"
+    # orcid: "https://orcid.org/0000-0000-0000-0000"
+version: 0.1.0
+date-released: 2026-01-01
+# TODO: replace with the DOI/URL of the published article once available
+url: "https://github.com/inespemarques/transgenicline_validation"
+# doi: "10.xxxx/xxxxxxx"
+license: MIT
+preferred-citation:
+  type: thesis
+  title: "Quantitative Characterization of Zebrafish Reporter Lines Targeting Different Neurotransmitter Populations"
+  authors:
+    - family-names: "[Your last name]"
+      given-names: "[Your first name]"
+  institution:
+    name: "[Your institution]"
+  year: 2026
+  # TODO: add journal fields (journal, volume, issue, pages, doi) once published
