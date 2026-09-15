@@ -119,6 +119,11 @@ pandas
 ```
 
 ---
+## Data availability
+
+Raw confocal stacks, segmentation masks, and full-resolution TIFFs are deposited at the
+BioImage Archive under accession [S-BIADxxxx] (link to be added upon deposition).
+This repository contains only code, processed CSV outputs, and example figures.
 
 ## Limitations
 
