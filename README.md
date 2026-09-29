@@ -43,9 +43,10 @@ approach (Section 3) instead — this is set per channel, not fixed.
 ## Quickstart
 
 ```bash
-# 1. Preprocess the nuclear channel
-python 01_preprocessing/zattenuation_correction.py --input raw_stack.tif --output corrected.tif
-# then apply FIJI macros in 01_preprocessing/fiji_macros/ (see that folder's README for parameters)
+# 1. Preprocess the nuclear channel (see 01_preprocessing/README.md for parameters)
+#    a. Fiji: 01_preprocessing/fiji_macros/step1_downscale.ijm            -> downscaled.tif
+python 01_preprocessing/zattenuation_correction.py --input downscaled.tif --output zcorrected.tif
+#    c. Fiji: 01_preprocessing/fiji_macros/step3_background_median_clahe_normalise.ijm -> corrected.tif
 
 # 2. Segment nuclei in 3D
 python 02_segmentation/inference/segment_bricks.py --input corrected.tif --model cyto3_finetuned --output masks.tif
@@ -88,6 +89,7 @@ recommended for any new reporter/marker pair.
 transgenicline_validation/
 ├── README.md
 ├── 01_preprocessing/
+│   ├── README.md
 │   ├── zattenuation_correction.py
 │   └── fiji_macros/
 ├── 02_segmentation/
